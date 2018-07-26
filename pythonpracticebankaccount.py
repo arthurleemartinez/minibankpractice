@@ -11,10 +11,10 @@ class BankAccount(object):
   
   def deposit(self, amount):
     if amount < 0:
-      print("You must deposit a larger amount.")
+      print "You must deposit a larger amount."
     	return
     else:
-      print(round(amount, 2))
+      print (round(amount, 2))
     self.balance += amount
     self.show_balance()
    
@@ -33,4 +33,3 @@ my_account.show_balance()
 my_account.deposit(2000)
 my_account.withdraw(1000)
 print my_account.__repr__()
-
